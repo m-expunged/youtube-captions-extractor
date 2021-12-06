@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
           e.segs.forEach(s => {
             line = line + s.utf8;
           });
-          const p = document.createElement("p");
+          let p = document.createElement("p");
           p.innerText = line;
           document.getElementById("content").appendChild(p);
         }
